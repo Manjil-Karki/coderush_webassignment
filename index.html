@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="topbar_script.js"></script>
+
+    <div class="form-popup-bg">
+        <div class="form-container">
+          <button id="btnCloseForm" class="close-button">X</button>
+          <h1>Contact Us</h1>
+          <p>For more information. Please complete this form.</p>
+          <form action="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input name = "name" id = "name" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="flight">Flight</label>
+              <input id = "flight" name = "flight" class="form-control" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail Address</label>
+              <input name = "email" id = "email" class="form-control" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id = "phone" name = "phone" class="form-control" type="text" />
+            </div>
+            <button class = "submit-button">Book</button>
+          </form>
+        </div>
+      </div>
+
+    <div class = "main">
+        <h2>Flights Information</h2>
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-yj5y">S.n.</th>
+                    <th class="tg-yj5y">Flight</th>
+                    <th class="tg-yj5y">From</th>
+                    <th class="tg-yj5y">To</th>
+                    <th class="tg-yj5y">Time</th>
+                    <th class="tg-yj5y">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-yj5y">1</td>
+                    <td class="tg-c3ow">Qatar Airways</td>
+                    <td class="tg-c3ow">Sao Paulo</td>
+                    <td class="tg-c3ow">Doha</td>
+                    <td class="tg-c3ow">12:35 UTC</td>
+                    <td class="tg-c3ow">$300</td>
+                </tr>
+                <tr>
+                    <td class="tg-yj5y">2</td>
+                    <td class="tg-yj5y">Emirates</td>
+                    <td class="tg-yj5y">Delhi</td>
+                    <td class="tg-yj5y">Berlin</td>
+                    <td class="tg-yj5y">6:45 UTC</td>
+                    <td class="tg-yj5y">$250</td>
+                </tr>
+                <tr>
+                    <td class="tg-yj5y">3</td>
+                    <td class="tg-c3ow">Nepal Airlines</td>
+                    <td class="tg-c3ow">Tokyo</td>
+                    <td class="tg-c3ow">Kathmandu</td>
+                    <td class="tg-c3ow">11:00 UTC</td>
+                    <td class="tg-c3ow">$150</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="footer_script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
