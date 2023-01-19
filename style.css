@@ -24,6 +24,10 @@ body {
     margin-bottom: auto;
 }
 
+.inner h1{
+    font-size: 2rem;
+}
+
 .inner a,
 .inner button {
     color: black;
@@ -51,28 +55,48 @@ body {
     background-color: red;
 }
 
-.menu-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
     z-index: 1;
-}
-
-.menu-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
     text-decoration: none;
+    font-size: 36px;
+    color: #818181;
     display: block;
-    text-align: left;
-}
-
-.menu-content a:hover {
-    background-color: #ddd;
-}
-
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  
 .menu:hover .menu-content {
     display: block;
 }
@@ -211,8 +235,8 @@ form input[type="password"]:focus {
 .tg {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 80%;
-    height: 50%;
+    width: 80vw;
+    height: 30vh;
     margin: auto;
 }
 
@@ -220,7 +244,7 @@ form input[type="password"]:focus {
     border-color: black;
     border-style: solid;
     border-width: 1px;
-    font-size: 20px;
+    font-size: 1.5rem;
     overflow: hidden;
     padding: 10px 5px;
     word-break: normal;
@@ -230,7 +254,7 @@ form input[type="password"]:focus {
     border-color: black;
     border-style: solid;
     border-width: 1px;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: normal;
     overflow: hidden;
     padding: 10px 5px;
@@ -345,8 +369,23 @@ footer {
         margin-bottom: 20px;
         text-align: center;
     }
+    .tg td  {
+        font-size: 0.7rem;
+    }
+    .tg th{
+        font-size: 0.7rem;
+    }
+    
 }
-
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    
+  }
 .extras {
     margin-top: 25vh;
     padding: 5px;
